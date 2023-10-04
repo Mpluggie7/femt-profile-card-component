@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* name and stats */
+.f18 {
+  font-size: 18px;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background-color: var(--Dark-cyan);
+  height: 100vh;
+  width: 100vw;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.bgTopCircle,
+.bgBtmCircle {
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.bgTopImage {
+  position: absolute;
+  bottom: 0;
+  right: 40%;
+}
+
+.bgBtmImage {
+  position: absolute;
+  top: 0;
+  left: 40%;
+  opacity: 0.8;
+}
+
+.bodyFrameOnBody {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.frame {
+  width: 300px;
+  background-color: white;
+  margin: auto;
+  border-radius: 15px;
+}
+
+.blockProfile {
+  position: relative;
+}
+
+.bgTopProfile {
+  border-radius: 15px 15px 0 0;
+  background-image: url("./images/bg-pattern-card.svg");
+  height: 140px;
+}
+
+.bgBtnProfile {
+  height: 140px;
+  width: 100%;
+  padding-top: 60px;
+  text-align: center;
+  border-bottom: 1px solid var(--dark-gray);
+}
+
+.bgBtnProfile h1 {
+  font-size: 20px;
+}
+
+.bgBtnProfile h1 span {
+  font-weight: 400;
+  padding: 0 4px;
+  color: var(--Dark-grayish-blue);
+}
+
+.bgBtnProfile p {
+  color: var(--Dark-grayish-blue);
+  margin-top: 10px;
+}
+
+.imgUser {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgUser img {
+  border-radius: 54px;
+  border: 6px solid white;
+}
+
+.blockStatic {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  text-align: center;
+  padding: 18px;
+}
+
+.blockStatic div h2 {
+  font-size: 18px;
+}
+
+.blockStatic div p {
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  margin-top: 8px;
+  color: var(--Dark-grayish-blue);
+}
